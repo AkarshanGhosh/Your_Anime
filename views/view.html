@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>YourAnime</title>
+	<link rel="stylesheet" href="view.css">
+	<link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+	
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<a href="C:/Users/AkarshanAndro/OneDrive/Desktop/web%20development/index.html">Your-Anime</a>
+			
+		<div class="navbar">
+			<ul>
+				<li><a href="#">Photos</a></li>
+				<li><a href="C:/Users/AkarshanAndro/OneDrive/Desktop/web%20development/views/videos.html">Videos</a></li>
+				<li><a href="C:/Users/AkarshanAndro/OneDrive/Desktop/web%20development/views/waifu.html">Waifus</a></li>
+				<li><a href="#">News</a></li>
+				<li><a href="#">Trending</a></li>
+				
+			</ul>
+		</div>
+		</div>
+	</header>
+	<div class="full-img" id="fullimgBox">
+		<img src= "images/img1.jpg" id="fullimg">
+		<span onclick="closeFullimg()">X</span>
+	</div>
+	<h1 class="title">Photos</h1>
+	<div class="img-gallery">
+		<img src="images/miku1.jpg" class="rounded float-start" alt="Miku" width="300" height="300" onclick="openFullimg(this.src)">
+		<img src="images/miku2.jpg" class="rounded float-end" alt="Miku nakano" width="300" height="300" onclick="openFullimg(this.src)">
+		<img src="images/miku3.jpg" class="rounded float-start" alt="Miku" width="250" height=" 300" onclick="openFullimg(this.src)">
+		<img src="images/mikasa.jpg" class="rounded float-start" alt="Mikasa" width="700" height=" 500" onclick="openFullimg(this.src)">
+		
+	</div>
+	
+	
+	<script>
+		var fullimgBox= document.getElementById("fullimgBox");
+		var fullimg = document.getElementById("fullimg")
+		
+		function openFullimg(pic){
+			fullimgBox.style.display="flex";
+			fullimg.src = pic;
+		}
+		function closeFullimg(){
+		fullimgBox.style.display="none";
+		}
+	
+	
+	</script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</body>
+
+</html>
